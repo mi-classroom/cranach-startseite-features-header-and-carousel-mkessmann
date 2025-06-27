@@ -43,4 +43,4 @@ class MainFooter extends HTMLElement {
     `;
   }
 }
-customElements.define('main-footer', MainFooter);
+customElements.define("main-footer", MainFooter);

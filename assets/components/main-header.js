@@ -48,4 +48,4 @@ class MainHeader extends HTMLElement {
     `;
   }
 }
-customElements.define('main-header', MainHeader);
+customElements.define("main-header", MainHeader);
