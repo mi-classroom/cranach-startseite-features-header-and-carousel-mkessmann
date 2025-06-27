@@ -3,40 +3,42 @@ html {
 }
 
 body {
-  font-family: var(--font-family-primary);
-  color: var(--color-text-default);
-  background-color: var(--color-background-default);
-  line-height: var(--line-height-loose);
-  font-weight: var(--font-weight-light);
   overflow: auto;
+  background-color: var(--color-background-default);
+  color: var(--color-text-default);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-loose);
 }
 
-header, main, footer{
+header,
+main,
+footer {
   padding: var(--fluid-space-m);
 }
 
 h1 {
+  margin-bottom: var(--spacing-3xl);
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-regular);
-  margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
   text-wrap: balance;
 }
 
 h2 {
-  font-size: var(--font-size-xl);
   margin-top: var(--spacing-3xl);
   margin-bottom: var(--spacing-l);
+  font-size: var(--font-size-xl);
 }
 
-h3{
+h3 {
   margin-top: var(--spacing-xl);
   font-weight: var(--font-weight-bold);
 }
 
 img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 p,
@@ -53,7 +55,6 @@ dd,
 li,
 figcaption {
   hyphens: auto;
-  ;
 }
 
 strong {
