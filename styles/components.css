@@ -2,11 +2,10 @@
 ############################################################################# */
 
 .infobox {
-  background-color: var(--color-background-200);
-  border-left: solid var(--border-width-l) var(--color-primary-default);
-
   padding: var(--spacing-m);
+  border-left: solid var(--border-width-l) var(--color-primary-default);
   margin-bottom: var(--spacing-m);
+  background-color: var(--color-background-200);
 
   h3 {
     margin-top: 0;
@@ -18,7 +17,7 @@
 }
 
 figure:has(.infobox) {
-  @media screen and (min-width: 700px) {
+  @media screen and (width >= 700px) {
     display: flex;
 
     .infobox {
@@ -27,9 +26,7 @@ figure:has(.infobox) {
 
     img {
       width: 100%;
-
       object-fit: cover;
-      ;
     }
   }
 }
@@ -38,11 +35,10 @@ figure:has(.infobox) {
 ############################################################################# */
 
 .image-with-caption {
-
   margin-top: var(--fluid-space-m);
   margin-bottom: var(--fluid-space-m);
 
-  @media screen and (min-width: 700px) {
+  @media screen and (width >= 700px) {
     height: 100%;
 
     & {
@@ -51,15 +47,15 @@ figure:has(.infobox) {
   }
 
   img {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 
   figcaption {
     padding: var(--spacing-m);
+    background-color: var(--color-background-200);
     font-size: var(--font-size-s);
     line-height: var(--line-height-tight);
-    background-color: var(--color-background-200);
   }
 }
 
@@ -68,7 +64,6 @@ figure:has(.infobox) {
 
 .toc {
   margin-bottom: var(--spacing-4xl);
-
 
   h2 {
     font-size: var(--font-size-xl);
@@ -80,16 +75,14 @@ figure:has(.infobox) {
 
     li {
       padding: var(--spacing-2xs);
-
-      margin: 0;
-      border-left: var(--border-width-m) solid var(--color-background-200);
       padding-left: var(--spacing-s);
+      border-left: var(--border-width-m) solid var(--color-background-200);
+      margin: 0;
 
       a {
         color: var(--color-text-default);
-        text-decoration: none;
         opacity: 0.6;
-
+        text-decoration: none;
       }
 
       &:hover {
@@ -107,12 +100,12 @@ figure:has(.infobox) {
   ############################################################################# */
 
 .button {
-  background-color: var(--color-primary-default);
+  height: 38px;
   padding: 0 var(--spacing-xs);
   border: none;
+  background-color: var(--color-primary-default);
   color: #fff;
   font-size: var(--font-size-l);
-  height: 38px;
 
   &:active {
     background-color: var(--color-primary-400);
@@ -123,7 +116,6 @@ figure:has(.infobox) {
 ############################################################################# */
 
 .vita-list {
-
   margin-bottom: var(--spacing-2xl);
 
   dt {
@@ -135,7 +127,7 @@ figure:has(.infobox) {
     border-bottom: solid 1px var(--color-light);
   }
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     display: grid;
     grid-template-columns: 16ch 1fr;
 
