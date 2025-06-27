@@ -1,0 +1,55 @@
+.landing {
+  .hero-image {
+    position: relative;
+    display: inline-block;
+
+    background: linear-gradient(
+      to top left,
+      hsl(0, 0%, 0%) 0%,
+      hsla(0, 0%, 0%, 0.987) 3.8%,
+      hsla(0, 0%, 0%, 0.951) 7.4%,
+      hsla(0, 0%, 0%, 0.896) 10.9%,
+      hsla(0, 0%, 0%, 0.825) 14.4%,
+      hsla(0, 0%, 0%, 0.741) 18.1%,
+      hsla(0, 0%, 0%, 0.648) 22.2%,
+      hsla(0, 0%, 0%, 0.55) 26.8%,
+      hsla(0, 0%, 0%, 0.45) 32.1%,
+      hsla(0, 0%, 0%, 0.352) 38.2%,
+      hsla(0, 0%, 0%, 0.259) 45.2%,
+      hsla(0, 0%, 0%, 0.175) 53.3%,
+      hsla(0, 0%, 0%, 0.104) 62.7%,
+      hsla(0, 0%, 0%, 0.049) 73.5%,
+      hsla(0, 0%, 0%, 0.013) 85.9%,
+      hsla(0, 0%, 0%, 0) 100%
+    );
+
+    img {
+      position: relative;
+      z-index: -1;
+    }
+
+    h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      color: var(--color-lightest);
+
+      font-size: clamp(2rem, 10vw, 10rem);
+      font-weight: var(--font-weight-bold);
+      text-align: right;
+      line-height: var(--line-height-tighter);
+
+      text-transform: uppercase;
+      /*text-shadow: 0 0 4px hsl(0 0 0 / 1);*/
+    }
+  }
+  .content {
+    max-width: 68rem;
+    margin-top: 5rem;
+  }
+}
