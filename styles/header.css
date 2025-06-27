@@ -46,18 +46,11 @@ body:has(.main-navigation.is-active) {
     .main-navigation {
       position: fixed;
       z-index: 1000;
-<<<<<<< HEAD
-=======
-      inset: 0;
->>>>>>> ad3eeed3c084ab9ac5f86b041249b2b93bdaea44
       display: none;
       padding-top: var(--spacing-2xl);
       padding-bottom: var(--spacing-2xl);
       background-color: var(--color-background-default);
-<<<<<<< HEAD
       inset: 0;
-=======
->>>>>>> ad3eeed3c084ab9ac5f86b041249b2b93bdaea44
       overflow-y: auto;
 
       &.is-active {
