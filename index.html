@@ -6,8 +6,8 @@
     <title>Cranach Digital Archive</title>
 
     <link rel="stylesheet" href="/styles/_combined.css" />
-    <script src="/assets/components/main-header.js"></script>
-    <script src="/assets/components/main-footer.js"></script>
+    <script defer src="/assets/components/main-header.js"></script>
+    <script defer src="/assets/components/main-footer.js"></script>
 
     <script defer src="/scripts/main.js"></script>
     <script defer src="/scripts/carousel.js"></script>
@@ -17,28 +17,37 @@
     <main-header></main-header>
 
     <main class="home">
-      <section class="hero-image">
-        <h1>Step into Cranach's World</h1>
+      <!-- big opener element -->
+      <figure class="opener is-full-width">
         <img
-          src="assets/homepage-assets/01-hero-image/cranach-opener.webp"
+          src="/assets/images/cranach-opener.webp"
           alt="Lucas Cranach der Ältere, Adam und Eva, 1528, Öl auf Holz, 90 x 120 cm, Kunsthistorisches Museum Wien"
+          width="1200"
+          height="800"
         />
-      </section>
-      <section class="intro-text content">
+
+        <figcaption>
+          <h1 class="zoom-in">Discover the work of Lucas Cranach</h1>
+        </figcaption>
+      </figure>
+
+      <!-- intro text -->
+      <div class="intro-text slide-in">
         <p>
           Das Cranach Digital Archive (CDA) ist ein internationales
           Forschungsprojekt, das sich der Dokumentation und Erforschung der
-          Werke von Lucas Cranach d. Ä. (1472-1553) und seiner Werkstatt widmet.
-          Es bietet eine umfassende digitale Sammlung von hochauflösenden
-          Bildern, wissenschaftlichen Analysen und historischen Dokumenten zu
-          seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der
+          Werke von Lucas Cranach d. Ä. (1472–1553) und seiner Werkstatt widmet.
+          Es bietet eine umfassende digitale Sammlung hochauflösender Bilder,
+          wissenschaftlicher Analysen und historischer Dokumente zu seinen
+          Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der
           Öffentlichkeit einen zentralen Zugang zu detaillierten Informationen
           über Cranachs Werke zu ermöglichen und den Austausch
           wissenschaftlicher Erkenntnisse zu fördern.
         </p>
-      </section>
+      </div>
 
-      <section class="about-carousel">
+      <!-- about the cranachs -->
+      <div class="about-carousel">
         <div class="carousel-wrapper" data-js-about-carousel-wrap>
           <div class="carousel-item">
             <figure class="about-item scale-in text-image is-active">
@@ -131,11 +140,9 @@
             <span class="icon">chevron_right</span>
           </button>
         </nav>
-      </section>
+      </div>
     </main>
 
     <main-footer></main-footer>
-
-    <script src="/scripts/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 /* reset.css */
-
 /* Basierend auf dem Eric Meyer Reset (v2.0 | 20110126) – public domain */
 
 html,
@@ -75,6 +74,7 @@ footer,
 header,
 hgroup,
 main,
+menu,
 nav,
 output,
 ruby,
@@ -84,11 +84,11 @@ time,
 mark,
 audio,
 video {
+  margin: 0;
   padding: 0;
   border: 0;
-  margin: 0;
-  font: inherit;
   font-size: 100%;
+  font: inherit;
   vertical-align: baseline;
 }
 

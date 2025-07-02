@@ -20,10 +20,10 @@ const initMenu = () => {
 
 const initPageNavigation = () => {
   const sectionHeadlines = document.querySelectorAll(
-    "[data-js-page-content] > section > h2"
+    "[data-js-page-content] > section > h2",
   );
   const pageNavigationMenu = document.querySelector(
-    "[data-js-page-navigation-menu]"
+    "[data-js-page-navigation-menu]",
   );
 
   if (pageNavigationMenu) {

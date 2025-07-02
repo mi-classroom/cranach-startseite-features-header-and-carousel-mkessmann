@@ -1,9 +1,9 @@
 @font-face {
   font-family: ibm-plex-sans;
-  font-style: normal;
-  font-weight: 100 700;
   src: url("/fonts/IBM_Plex_Sans-2/IBMPlexSans-VariableFont_wdth\,wght.ttf")
     format("truetype");
+  font-weight: 100 700;
+  font-style: normal;
 }
 
 @font-face {
@@ -11,6 +11,7 @@
   font-family: material-icons;
   font-style: normal;
   font-weight: 400;
+
   src:
     local("Material Icons"),
     local("MaterialIcons-Regular"),
