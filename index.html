@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="/styles/_combined.css" />
     <script src="/assets/components/main-header.js"></script>
     <script src="/assets/components/main-footer.js"></script>
+
+    <script defer src="/scripts/main.js"></script>
+    <script defer src="/scripts/carousel.js"></script>
   </head>
 
   <body>
     <main-header></main-header>
 
-    <main class="landing">
+    <main class="home">
       <section class="hero-image">
         <h1>Step into Cranach's World</h1>
         <img
           src="assets/homepage-assets/01-hero-image/cranach-opener.webp"
-          alt="Cranach Digital Archive Hero Image"
+          alt="Lucas Cranach der Ältere, Adam und Eva, 1528, Öl auf Holz, 90 x 120 cm, Kunsthistorisches Museum Wien"
         />
       </section>
       <section class="intro-text content">
@@ -31,8 +34,103 @@
           seinen Gemälden. Ziel ist es, Kunsthistorikern, Restauratoren und der
           Öffentlichkeit einen zentralen Zugang zu detaillierten Informationen
           über Cranachs Werke zu ermöglichen und den Austausch
-          wissenschaftlicher Erkenntnisse zu Fördern.
+          wissenschaftlicher Erkenntnisse zu fördern.
         </p>
+      </section>
+
+      <section class="about-carousel">
+        <div class="carousel-wrapper" data-js-about-carousel-wrap>
+          <div class="carousel-item">
+            <figure class="about-item scale-in text-image is-active">
+              <div class="image-stack" data-js-image-stack>
+                <img
+                  src="/assets/images/lucas-cranach-1.jpg"
+                  alt="Lucas Cranach der Ältere, Selbstporträt, 1545, Öl auf Holz, 50 x 40 cm, Kunsthistorisches Museum Wien"
+                  width="800"
+                  height="600"
+                />
+                <img
+                  src="/assets/images/lucas-cranach-2.jpg"
+                  alt="Lucas Cranach der Jüngere, Selbstporträt, 1584, Öl auf Holz, 50 x 40 cm, Kunsthistorisches Museum Wien"
+                  width="800"
+                  height="600"
+                />
+                <img
+                  src="/assets/images/lucas-cranach-3.jpg"
+                  alt="Cranach-Werkstatt, Selbstporträt, 1550, Öl auf Holz, 50 x 40 cm, Kunsthistorisches Museum Wien"
+                  width="800"
+                  height="600"
+                />
+              </div>
+              <figcaption>
+                <h2>Lucas Cranach</h2>
+                <p>
+                  Lucas Cranach der Ältere verkörpert die Ideale eines Mannes im
+                  Zeitalter der Renaissance, der neben seiner Tätigkeit als
+                  Maler, Grafiker und Buchdrucker auch als Politiker und
+                  Unternehmer tätig war.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-item">
+            <div class="about-item">
+              <h2>Kritischer Katalog der Luther-Bildnisse (1519 - 1530)</h2>
+              <p>
+                Ein von der Leibniz-Gemeinschaft gefördertes Forschungsprojekt,
+                eine Kooperation des Germanischen Nationalmuseums in Nürnberg
+                mit der Friedrich-Alexander-Universität Erlangen-Nürnberg und
+                der TH Köln, hinterfragt die Authentizität der Luther-Bildnisse.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <figure class="about-item text-image-simple">
+              <div class="image-stack">
+                <img
+                  src="/assets/images/cranach-map.webp"
+                  alt="Cranach Map: Eine interaktive Karte, die die Verbreitung von Cranachs Werken in Europa zeigt."
+                  width="800"
+                  height="600"
+                />
+              </div>
+              <figcaption>
+                <h2>Interdisziplinär und inter­institutionell</h2>
+                <p>
+                  Das Cranach Digital Archive zeigt, dass Kooperation eine
+                  Horizonterweiterung in der Erfassung und Interpretation von
+                  Kunstwerken ermöglicht.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="carousel-indicators" data-js-carousel-indicator>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <button
+            class="round-button button-previous"
+            aria-label="Vorheriges Element"
+            data-js-about-carousel="previous"
+          >
+            <span class="icon">chevron_left</span>
+          </button>
+
+          <button
+            class="round-button button-next"
+            aria-label="Nächstes Element"
+            data-js-about-carousel="next"
+          >
+            <span class="icon">chevron_right</span>
+          </button>
+        </nav>
       </section>
     </main>
 
