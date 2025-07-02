@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  overflow: auto;
-  background-color: var(--color-background-default);
-  color: var(--color-text-default);
   font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-light);
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);
   line-height: var(--line-height-loose);
+  font-weight: var(--font-weight-light);
+  overflow: auto;
 }
 
 header,
@@ -18,27 +18,28 @@ footer {
 }
 
 h1 {
-  margin-bottom: var(--spacing-3xl);
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-regular);
+  margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
   text-wrap: balance;
 }
 
 h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-regular);
   margin-top: var(--spacing-3xl);
   margin-bottom: var(--spacing-l);
-  font-size: var(--font-size-xl);
 }
 
 h3 {
   margin-top: var(--spacing-xl);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 }
 
 img {
-  display: block;
   width: 100%;
+  display: block;
 }
 
 p,

@@ -6,16 +6,19 @@
 :root {
   /* font family */
   --font-family-primary: "IBM Plex Sans", sans-serif;
+
   --base-font-size: 1rem;
   --fluid-base-font-size: clamp(1rem, 4vw, 10rem);
 
   /* font sizes */
   --font-size-s: calc(var(--base-font-size) * 0.75);
-  --font-size-m: calc(var(--base-font-size) * 1);
+  --font-size-m: var(--base-font-size);
   --font-size-l: calc(var(--base-font-size) * 1.25);
   --font-size-xl: calc(var(--base-font-size) * 1.5);
   --font-size-2xl: calc(var(--base-font-size) * 1.75);
   --font-size-3xl: calc(var(--base-font-size) * 2);
+  --font-size-4xl: calc(var(--base-font-size) * 2.5);
+  --font-size-5xl: calc(var(--base-font-size) * 3);
 
   /* font weights */
   --font-weight-light: 300;
@@ -24,24 +27,25 @@
   --font-weight-bold: 700;
 
   /* line heights */
-  --line-height-tighter: 90%;
+  --line-height-tighter: 100%;
   --line-height-tight: 120%;
   --line-height-normal: 130%;
   --line-height-loose: 140%;
 
   /* colors */
 
-  --color-dark: hsl(0deg 0% 20%);
-  --color-darker: hsl(0deg 0% 10%);
-  --color-darkest: hsl(0deg 0% 0%);
-  --color-light: hsl(0deg 0% 70%);
-  --color-lighter: hsl(0deg 0% 85%);
-  --color-lightest: hsl(0deg 0% 100%);
+  --color-dark: hsl(0, 0%, 20%);
+  --color-darker: hsl(0, 0%, 10%);
+  --color-darkest: hsl(0, 0%, 0%);
+  --color-light: hsl(0, 0%, 70%);
+  --color-lighter: hsl(0, 0%, 85%);
+  --color-lightest: hsl(0, 0%, 100%);
   --color-primary-300: #ffd37e;
   --color-primary-400: #ffc450;
   --color-primary-default: #feb701;
   --color-seconadary-default: #cc5800;
-  --color-background-default: #fff;
+
+  --color-background-default: #ffffff;
   --color-background-200: #f2f2f2;
   --color-text-default: var(--color-darker);
 
@@ -77,6 +81,7 @@
   --transition-slow: 500ms;
 
   /* max width for content */
-  --max-width-content: 90ch;
+  --max-width-content: 40rem;
+  --max-width-page: 960px;
   --logo-width: 5rem;
 }

@@ -1,7 +1,7 @@
 class MainFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-      <footer class="has-base-grid">
+        <footer class="has-base-grid">
 
         <a class="logo" href="../index.html">
             <img src="../assets/images/cda-logo-ws.svg" alt="Cranach Digital Archive Logo">
@@ -11,6 +11,7 @@ class MainFooter extends HTMLElement {
             <div class="general">
                 <h3>Allgemeines</h3>
                 <ul>
+                    <li><a href="/">Home</a></li>
                     <li>Impressum</li>
                     <li>Leitfaden</li>
                     <li>Nutzungsbedingungen</li>

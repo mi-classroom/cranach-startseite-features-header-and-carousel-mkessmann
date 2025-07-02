@@ -1,13 +1,13 @@
-@media screen and (width >= 900px) {
+@media screen and (min-width: 900px) {
   .has-base-grid {
+    grid-template-rows: auto;
     display: grid;
-    margin-top: var(--spacing-3xl);
-    gap: var(--fluid-space-m);
     grid-template-columns: minmax(20ch, 1fr) minmax(
         20ch,
-        calc(var(--max-width-content))
+        var(--max-width-content)
       );
-    grid-template-rows: auto;
+    gap: var(--fluid-space-m);
+    margin-top: var(--spacing-3xl);
 
     & > * {
       max-width: var(--max-width-content);
@@ -15,7 +15,6 @@
 
     .toc {
       width: 100%;
-
       .toc-content {
         position: sticky;
         top: var(--spacing-3xl);
@@ -31,7 +30,7 @@
 /* has grid
 ############################################################################# */
 
-@media screen and (width >= 900px) {
+@media screen and (min-width: 900px) {
   .has-grid {
     display: grid;
     gap: var(--spacing-m);
