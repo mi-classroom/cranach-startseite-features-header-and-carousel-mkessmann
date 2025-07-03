@@ -116,6 +116,11 @@
   }
 
 /* grid sizes */
+  .grid-item-1x1 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
   .grid-item-1x2 {
     grid-column: span 1;
     grid-row: span 2;
@@ -141,14 +146,34 @@
     grid-row: span 2;
   }
 
+  .grid-item-2x3 {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
   .grid-item-2x4 {
     grid-column: span 2;
     grid-row: span 4;
   }
 
+  .grid-item-3x1 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .grid-item-3x2 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
   .grid-item-3x3 {
     grid-column: span 3;
     grid-row: span 3;
+  }
+
+  .grid-item-3x4 {
+    grid-column: span 3;
+    grid-row: span 4;
   }
 }
 
